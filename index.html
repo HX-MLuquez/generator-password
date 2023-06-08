@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generator Password</title>
+    <style>
+     body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: #4e3d94;
+        margin-top: 50px;
+      }
+      li {
+        list-style-type: none;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+      }
+
+      .input-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .input-container label {
+        color: #4e3d94;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .input-container input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #4e3d94;
+      }
+
+      .button {
+        background-color: #4e3d94;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .password-list {
+        width: 300px;
+        margin-left: 20px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .password-list li {
+        margin-bottom: 5px;
+        color: #4e3d94;
+      }
+    </style>
+    <script src="./generator_password.js" async></script>
+  </head>
+  <body>
+    <h1>Generator Password</h1>
+    <div class="container">
+      <div class="input-container">
+        <label for="length">Length:</label>
+        <input type="number" id="num_amount" min="1" value="8" />
+      </div>
+      <button class="button" id="button_generator">Generate</button>
+      <h2 id="password"></h2>
+    </div>
+    <ul class="password-list" id="passwordList"></ul>
+
+  </body>
+</html>
